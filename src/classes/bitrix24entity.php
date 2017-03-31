@@ -17,8 +17,16 @@ abstract class Bitrix24Entity
 	/**
 	 * @param $client iBitrix24
 	 */
-	public function __construct(iBitrix24 $client)
+	public function __construct(iBitrix24 $client = null)
 	{
 		$this->client = $client;
 	}
+
+	/**
+	 * @param $client iBitrix24
+	 */
+	public function setClient(iBitrix24 $client)
+    {
+        $this->client = $client;
+    }
 }
